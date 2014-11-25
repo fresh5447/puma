@@ -1,4 +1,4 @@
-var pumaApp = angular.module('myApp',['ngRoute']);
+var pumaApp = angular.module('pumaApp',['ngRoute']);
 
 pumaApp.config(function($routeProvider){
 	$routeProvider
@@ -6,17 +6,19 @@ pumaApp.config(function($routeProvider){
 	.when('/', {
 		controller: 'mainController',
 		templateUrl: 'mainTemplate.html',
-		)}
-	.when('products'{
-		controller: 'productController',
+		})
+	.when('/products', {
+		controller: 'productsController',
 		templateUrl: 'productsTemplate.html'
 	});
 });
 
-pumaApp.controller('mainController', ['$scope', function ($scope) {
-	$scope.message = "hello from main"
-}])
+pumaApp.controller('mainController', function($scope){
+	$scope.message = "hello from the main controller";
 
-pumaApp.controller('productsController', ['$scope', function ($scope) {
-	$scope.message = "hello from products"
-}])
+});
+
+pumaApp.controller('productsController', function($scope){
+	$scope.message = "hello from the products controller";
+
+});
