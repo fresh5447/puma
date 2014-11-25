@@ -1,0 +1,25 @@
+* {
+	border-color: black;
+	border-style:dotted solid double dashed;
+}
+
+.product-feed-container{
+	width: 52%;
+	margin: 0 auto;
+}
+
+.product-container{
+	background-image: url("./images/mj.png");
+	background-color: #cccccc;
+	width: 50%;
+	margin: 0 auto;
+	display: block;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+
+#product-title{
+	font-size: 0.3em;
+	position: relative;
+	top: -20px;
+}
