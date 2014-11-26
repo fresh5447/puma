@@ -7,6 +7,7 @@
         <title>Title Page</title>
         <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
         <link href="css/main.css" rel="stylesheet">
         <link href="css/ryan.css" rel="stylesheet">
     </head>
@@ -19,25 +20,31 @@
             </div>
         </div>
     </nav> -->
-
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="NavBarCtrl">
         <div class="container">
             <div class="navbar-header">
-                <span class="pull-left"><i class="fa fa-chevron-left"></i> Back</span>
-                <span class="navbar-center"><h4 class="main-title">Title</h4></span>
-                 <span ng-click="menu = !menu" class="pull-right"><a class="menu-button"><i class="fa fa-bars"></i> Menu</a></span>
+                <div class="col-xs-4">
+                    <span><i class="fa fa-chevron-left"></i> Back</span>
+                </div>
+                <div class="col-xs-4">
+                    <span class="navbar-center"><h4 class="main-title">Title</h4></span>
+                </div>
+                <div class="col-xs-4">
+                    <span class="pull-right"><a ng-click="navToggle()" class="menu-button"><i class="fa fa-bars"></i> Menu</a></span>
+                </div>
             </div>
         </div>
-        <div class="sub-nav" ng-show="menu">
+
+        <div ng-show="isCollapsed" class="sub-nav">
             <ul class="list-unstyled list-inline">
-                <li class="sub-nav-button"><a href="#/mainTemplate.html">Home</a></li>
-                <li class="sub-nav-button"><a href="#/productsTemplate.html">Products</a></li>
-                <li class="sub-nav-button"><a href="#/productsTemplate.html">Something</a></li>
+                <li class="sub-nav-button"><a ng-click="navClick()" href="#/">Home</a></li>
+                <li class="sub-nav-button"><a ng-click="navClick()" href="#/products">Products</a></li>
+                <li class="sub-nav-button"><a ng-click="navClick()" href="#/products">Something</a></li>
             </ul>
         </div>
     </nav>
 
-    <div ng-view></div>
+    <ng-view</ng-view>
 
     <!-- jQuery -->
     <!-- Bootstrap JavaScript -->

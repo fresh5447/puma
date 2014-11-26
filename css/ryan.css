@@ -1,3 +1,15 @@
+.logo-green {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
+
+.logo-green img {
+   max-width: 10em;
+}
+
+/* Navigation */
+
 .navbar-default {
    background-color: #447324;
    padding: 1em 1em 0 1em;
@@ -10,21 +22,17 @@
 
 .navbar-center
 {
-   position: absolute;
-   width: 100%;
-   left: 0;
-   top: 1em;
    text-align: center;
-   margin: auto;
-   height:100%;
 }
 
 .main-title {
    margin-top: 0;
 }
 
-.menu-button {
+.menu-button, .menu-button:hover, .menu-button:visited, .menu-button:active {
    color: white;
+   text-decoration: none;
+   cursor: pointer;
 }
 
 .navbar-title {
@@ -52,18 +60,32 @@
    color: green;
 }
 
+/* form elements */
 .reg-btn {
    background-color: #35591c;
    width: 93%;
 
 }
 
-.logo-green {
-   position: absolute;
-   bottom: 0;
-   right: 0;
+/* Products */
+.product-container {
+   position: relative;
 }
 
-.logo-green img {
-   max-width: 10em;
+.product-image {
+   max-width: 100%;
+   height: auto;
+}
+
+.product-name {
+   position: absolute;
+   top: 0em;
+   left: 1em;
+   z-index: 999;
+   padding: 0.5em;
+   color: white;
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: 300;
+   background-color: rgba(0, 0, 0, 0.4);
+   background: rgba(0, 0, 0, 0.4);
 }

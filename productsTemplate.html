@@ -1,3 +1,25 @@
-<h1>Products Template</h1>
-
-{{$scope.message}}
+<div class="container">
+   <div class="row product-container">
+      <div class="product-name">
+         <h3>Lipsum Weed</h3>
+      </div>
+      <a href="" ng-click="productToggle()">
+         <img class="product-image" src="images/prod-01.jpg">
+      </a>
+      <div ng-show="productCollapsed" class="product-info">
+         Hello
+      </div>
+   </div>
+   <div class="row product-container">
+      <div class="product-name">
+         <h3>Lorem Strain</h3>
+      </div>
+      <img class="product-image" src="images/prod-02.jpg">
+   </div>
+   <div class="row product-container">
+      <div class="product-name">
+         <h3>Ipsum Indica</h3>
+      </div>
+      <img class="product-image" src="images/prod-03.jpg">
+   </div>
+</div>
