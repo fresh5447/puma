@@ -10,15 +10,21 @@ pumaApp.config(function($routeProvider){
 	.when('/products', {
 		controller: 'productsController',
 		templateUrl: 'productsTemplate.html'
+	})
+	.when('/settings', {
+		controller: 'settingsController',
+		templateUrl: 'settingsTemplate.html'
 	});
 });
 
 pumaApp.controller('mainController', function($scope){
 	$scope.message = "hello from the main controller";
-
 });
 
 pumaApp.controller('productsController', function($scope){
 	$scope.message = "hello from the products controller";
+});
 
+pumaApp.controller('settingsController', function($scope){
+	$scope.message = "hello from the settingss controller";
 });

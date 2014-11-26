@@ -1,18 +1,61 @@
 .navbar-default {
    background-color: #447324;
-   padding: 1em;
+   padding: 1em 1em 0 1em;
+   color: white;
+}
+
+.navbar-brand {
+  float: none;
+  }
+
+.navbar-center
+{
+   position: absolute;
+   width: 100%;
+   left: 0;
+   top: 1em;
+   text-align: center;
+   margin: auto;
+   height:100%;
+}
+
+.main-title {
+   margin-top: 0;
+}
+
+.menu-button {
    color: white;
 }
 
 .navbar-title {
    margin: 0 auto;
-   width: 10em;
+   width: 3em;
    text-align: center;
+}
+
+.sub-nav {
+   margin-bottom: 0;
+   margin-top: 1em;
+}
+
+.sub-nav li {
+   margin-top: 0.1em;
+}
+.sub-nav-button {
+   padding: 1em;
+   width: 100%;
+   background: white;
+   text-align: center;
+}
+
+.sub-nav-button a {
+   color: green;
 }
 
 .reg-btn {
    background-color: #35591c;
-   width: 100%;
+   width: 93%;
+
 }
 
 .logo-green {
